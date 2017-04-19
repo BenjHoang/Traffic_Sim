@@ -1,0 +1,128 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{C007613B-D7A1-4876-8CD1-6CAA15BC1A5E}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>trafficSim</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Cartype_18Wheeler.cpp" />
+    <ClCompile Include="Cartype_4Cylinder.cpp" />
+    <ClCompile Include="Cartype_6Cylinder.cpp" />
+    <ClCompile Include="Cartype_8Cylinder.cpp" />
+    <ClCompile Include="Cartype_LargeTruck.cpp" />
+    <ClCompile Include="Factory.cpp" />
+    <ClCompile Include="Intersection.cpp" />
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="Movement.cpp" />
+    <ClCompile Include="Movement_4Cylinder.cpp" />
+    <ClCompile Include="Movement_6Cylinder.cpp" />
+    <ClCompile Include="Movement_8Cylinder.cpp" />
+    <ClCompile Include="Movement_LargeTruck.cpp" />
+    <ClCompile Include="Road.cpp" />
+    <ClCompile Include="RoadMap.cpp" />
+    <ClCompile Include="SimpleCarFactory.cpp" />
+    <ClCompile Include="Simulation.cpp" />
+    <ClCompile Include="TrafficManager.cpp" />
+    <ClCompile Include="TrafficSimDataParser.cpp" />
+    <ClCompile Include="Traffic_light.cpp" />
+    <ClCompile Include="VehicleFactory.cpp" />
+    <ClCompile Include="Movement_18Wheeler.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Cartype_18Wheeler.h" />
+    <ClInclude Include="Cartype_4Cylinder.h" />
+    <ClInclude Include="Cartype_6Cylinder.h" />
+    <ClInclude Include="Cartype_8Cylinder.h" />
+    <ClInclude Include="Cartype_LargeTruck.h" />
+    <ClInclude Include="Factory.h" />
+    <ClInclude Include="Intersection.h" />
+    <ClInclude Include="Movement.h" />
+    <ClInclude Include="Movement_4Cylinder.h" />
+    <ClInclude Include="Movement_6Cylinder.h" />
+    <ClInclude Include="Movement_8Cylinder.h" />
+    <ClInclude Include="Movement_LargeTruck.h" />
+    <ClInclude Include="Road.h" />
+    <ClInclude Include="RoadMap.h" />
+    <ClInclude Include="SimpleCarFactory.h" />
+    <ClInclude Include="Simulation.h" />
+    <ClInclude Include="TrafficManager.h" />
+    <ClInclude Include="TrafficSimDataParser.h" />
+    <ClInclude Include="Traffic_light.h" />
+    <ClInclude Include="VehicleFactory.h" />
+    <ClInclude Include="Movement_18Wheeler.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,65 @@
+﻿Build started 4/15/2017 6:17:40 PM.
+     1>Project "D:\Desktop\trafficsim 2\trafficSim\trafficSim\trafficSim.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt Cartype_18Wheeler.cpp Cartype_4Cylinder.cpp Cartype_6Cylinder.cpp Cartype_8Cylinder.cpp Cartype_LargeTruck.cpp Factory.cpp Intersection.cpp Main.cpp Movement.cpp Movement_18Wheeler.cpp Movement_4Cylinder.cpp Movement_6Cylinder.cpp Movement_8Cylinder.cpp Movement_LargeTruck.cpp Road.cpp RoadMap.cpp SimpleCarFactory.cpp Simulation.cpp TrafficManager.cpp TrafficSimDataParser.cpp Traffic_light.cpp VehicleFactory.cpp
+         VehicleFactory.cpp
+         Traffic_light.cpp
+         TrafficSimDataParser.cpp
+         TrafficManager.cpp
+         Simulation.cpp
+     1>d:\desktop\trafficsim 2\trafficsim\trafficsim\simulation.cpp(47): warning C4996: '_ftime64': This function or variable may be unsafe. Consider using _ftime64_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\sys\timeb.h(124) : see declaration of '_ftime64'
+     1>d:\desktop\trafficsim 2\trafficsim\trafficsim\simulation.cpp(54): warning C4996: '_ftime64': This function or variable may be unsafe. Consider using _ftime64_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\sys\timeb.h(124) : see declaration of '_ftime64'
+         SimpleCarFactory.cpp
+         RoadMap.cpp
+         Road.cpp
+         Movement_LargeTruck.cpp
+         Movement_8Cylinder.cpp
+         Movement_6Cylinder.cpp
+         Movement_4Cylinder.cpp
+         Movement_18Wheeler.cpp
+     1>d:\desktop\trafficsim 2\trafficsim\trafficsim\movement_18wheeler.cpp(68): warning C4101: 'VS' : unreferenced local variable
+         Movement.cpp
+         Intersection.cpp
+         Factory.cpp
+         Cartype_LargeTruck.cpp
+         Cartype_8Cylinder.cpp
+         Cartype_6Cylinder.cpp
+         Cartype_4Cylinder.cpp
+         Generating Code...
+         Compiling...
+         Cartype_18Wheeler.cpp
+         Generating Code...
+         Compiling...
+         Main.cpp
+         Generating Code...
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\Desktop\trafficsim 2\trafficSim\Debug\trafficSim.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\Desktop\trafficsim 2\trafficSim\Debug\trafficSim.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\Desktop\trafficsim 2\trafficSim\Debug\trafficSim.lib" /MACHINE:X86 Debug\Cartype_18Wheeler.obj
+         Debug\Cartype_4Cylinder.obj
+         Debug\Cartype_6Cylinder.obj
+         Debug\Cartype_8Cylinder.obj
+         Debug\Cartype_LargeTruck.obj
+         Debug\Factory.obj
+         Debug\Intersection.obj
+         Debug\Main.obj
+         Debug\Movement.obj
+         Debug\Movement_4Cylinder.obj
+         Debug\Movement_6Cylinder.obj
+         Debug\Movement_8Cylinder.obj
+         Debug\Movement_LargeTruck.obj
+         Debug\Road.obj
+         Debug\RoadMap.obj
+         Debug\SimpleCarFactory.obj
+         Debug\Simulation.obj
+         Debug\TrafficManager.obj
+         Debug\TrafficSimDataParser.obj
+         Debug\Traffic_light.obj
+         Debug\VehicleFactory.obj
+         Debug\Movement_18Wheeler.obj
+         trafficSim.vcxproj -> D:\Desktop\trafficsim 2\trafficSim\Debug\trafficSim.exe
+     1>Done Building Project "D:\Desktop\trafficsim 2\trafficSim\trafficSim\trafficSim.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:07.92
